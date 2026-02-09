@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CricPulse | Unleash the Spirit of Cricket</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">🏏 CricPulse</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#matches">Matches</a></li>
+        <li><a href="#knowledge">Knowledge</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="hero-text">
+      <h1>Unleash the <span>Spirit of Cricket</span></h1>
+      <p>Join the ultimate hub for Sri Lankan cricket lovers. From live insights to tutorials — we’ve got you covered!</p>
+      <a href="#matches" class="btn">View Schedules</a>
+    </div>
+  </section>
+
+  <section id="news" class="content-section">
+    <h2>Latest Updates</h2>
+    <div class="card">
+      <h3>🏆 Lions Roar Again: SL vs IND Match Preview</h3>
+      <p>Key strategies and matchups to watch as Sri Lanka faces India in the series decider.</p>
+      <a href="#" class="read-more">Read More →</a>
+    </div>
+    <div class="card">
+      <h3>🌍 ICC T20 World Cup 2026 – Early Predictions</h3>
+      <p>Experts weigh in on which teams have the best chance to dominate next year’s global showdown.</p>
+      <a href="#" class="read-more">Read More →</a>
+    </div>
+  </section>
+
+  <section id="matches" class="content-section">
+    <h2>Upcoming Matches</h2>
+    <ul class="schedule">
+      <li><strong>SL vs IND</strong> — Feb 12, 2026 — R. Premadasa Stadium</li>
+      <li><strong>SL vs AUS</strong> — Mar 4, 2026 — Pallekele</li>
+      <li><strong>SL vs PAK</strong> — Apr 18, 2026 — Galle</li>
+    </ul>
+  </section>
+
+  <section id="knowledge" class="content-section">
+    <h2>Cricket Knowledge Hub</h2>
+    <p>Improve your cricket IQ with tips, tutorials, and deep insights — from batting techniques to field strategies.</p>
+    <button onclick="showTip()" class="btn">Show Random Tip</button>
+    <p id="tip-box" class="tip"></p>
+  </section>
+
+  <section id="about" class="content-section">
+    <h2>About CricPulse</h2>
+    <p>CricPulse is a community-driven cricket platform made by fans, for fans. Our goal is to bring Sri Lankan cricket closer to every home and heart.</p>
+  </section>
+
+  <footer>
+    <p>© 2026 CricPulse. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const tips = [
+      "Keep your eyes on the ball till the very last moment!",
+      "Always warm up before bowling to avoid injuries.",
+      "Rotate strike regularly to maintain pressure on the bowlers.",
+      "Footwork is the key to playing spin effectively.",
+      "Build partnerships — cricket is a team game!"
+    ];
+
+    function showTip() {
+      const randomTip = tips[Math.floor(Math.random() * tips.length)];
+      document.getElementById('tip-box').innerText = randomTip;
+    }
+  </script>
+</body>
+</html>
